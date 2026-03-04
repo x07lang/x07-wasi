@@ -15,6 +15,12 @@ x07-wasi is the single canonical source for `std.wasi.*` modules (per the [packa
 - **Types and codecs** for WASI 0.2 interfaces (available now)
 - **Effectful APIs** via WASI capability imports with strict budget/policy enforcement (future — see Phase 8 in the [WASM roadmap](https://github.com/x07lang/x07-wasm-backend))
 
+## Security notes
+
+WASI is an interface contract; the security boundary comes from the chosen WASM runtime and the host capabilities you expose.
+
+If you need to execute untrusted WASM/WASI code, use a hardened runtime (for example Wasmtime, as used by `x07-wasm`) with a deny-by-default capability model and resource limits. Node’s `node:wasi` APIs are not intended to be a security sandbox — do not rely on them to run untrusted code.
+
 ## Namespace rules
 
 Only this repo exports `std.wasi.*`. Platform-specific modules must use a non-`std.*` namespace.
