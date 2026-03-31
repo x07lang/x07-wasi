@@ -1,5 +1,9 @@
 # x07-wasi
 
+## Agent Entrypoint
+
+Start here: https://x07lang.org/docs/getting-started/agent-quickstart
+
 `x07-wasi` is the canonical public home for `std.wasi.*` in the [X07](https://github.com/x07lang/x07) ecosystem. It exists to hold the WASI-facing packages, contracts, and release line that x07 programs can depend on when targeting WebAssembly and WASI hosts.
 
 The vision is to give x07 one clear, official place for WASI integration instead of scattering WASI support across unrelated repos. End users should be able to look at this repo and know where the `std.wasi.*` story lives.
