@@ -47,7 +47,7 @@ In day-to-day work, most users will meet this repo through the wider x07 flow:
 x07-wasi is the single canonical source for `std.wasi.*` modules (per the [package policy](https://github.com/x07lang/x07/blob/main/docs/project/package-policy.md)). It provides:
 
 - **Types and codecs** for WASI 0.2 interfaces (available now)
-- **Effectful APIs** via WASI capability imports with strict budget/policy enforcement (future — see Phase 8 in the [WASM roadmap](https://github.com/x07lang/x07-wasm-backend))
+- **Effectful APIs** via WASI capability imports with strict budget/policy enforcement (future — see the device bundling surfaces in [x07-wasm-backend](https://github.com/x07lang/x07-wasm-backend))
 
 ## Install and use
 
